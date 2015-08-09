@@ -162,7 +162,7 @@ form#forgotpassword-form, a.reset, a.confirm,#messagefilterform,
 
 #globalhelp .content .text,.ui-dialog, #webblertabs, 
 .configForm fieldset, .configForm legend, 
-div.dropButton  { border-color:#999;}
+div.dropButton  { border-color:#ccc;}
 
 #login:hover, #logout:hover                         { border-color:#777;}
 
@@ -227,5 +227,9 @@ a.action-button, input.action-button                { -moz-box-shadow:1px 1px 4p
 .minitabs #webblertabs ul li:hover,
 .minitabs #webblertabs ul li.current                { -moz-box-shadow:1px 1px 4px #777; -webkit-box-shadow:1px 1px 4px #777; box-shadow:1px 1px 4px #777;}
 
+/******************************* 5. BUTTONS & INPUTS */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+background-color: #DDD;
+}
 
 /* End of /lists/admin/ui/dressprow/css/gray.css */

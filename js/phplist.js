@@ -32,7 +32,8 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
 
 /* JS to execute on loading document */
 $(document).ready(function() {
-	// adding add and even classes to table in dbcheck page
+
+	// add odd and even classes to table in dbcheck page
 	$(".dbcheck tr.row:even").addClass("even");
 	$(".dbcheck tr.row:odd").addClass("odd");
 	// make the content collapsible
@@ -217,7 +218,13 @@ $(document).ready(function() {
 
 
     }
-
-
+/* Input placeholders */
+    // Login page
+    $('body.login .loginPassUpdate').find('input').filter(':text, :password').each(function(){
+        //console.log($(this).parents('tr').prev('tr').find('span.general').html());
+        var placeholder = $(this).parents('tr').prev('tr').find('span.general');
+        placeholder.hide();
+        $(this).attr('placeholder', placeholder.text());
+    });
 
 });

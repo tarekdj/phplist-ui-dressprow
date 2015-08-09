@@ -85,8 +85,8 @@ div.panel .content										{ border-width:1px; border-style:solid; padding:5px;
 
 #globalhelp 											{ text-align:left; margin-top:37px;}
 #globalhelp .content									{ overflow:hidden; height:auto; width:100%; display:none;}
-#globalhelp .content .text								{ font-size:15px; line-height:20px; padding:20px; width:auto; border-width:1px; border-style:solid; border-top:0px; margin:0 auto; -webkit-border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; -moz-border-radius-bottomright:10px; -moz-border-radius-bottomleft:10px; border-bottom-right-radius:10px; border-bottom-left-radius:10px;}
-#globalhelp .buttonhelp									{ background:url('../../dressprow/images/16x16/info.png') no-repeat 6px 3px; cursor:pointer; float:right; margin-right:10px; margin-top:-1px; width:auto; text-align:center; padding:2px 8px 2px 25px; text-transform:uppercase; -webkit-border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; -moz-border-radius-bottomright:10px; -moz-border-radius-bottomleft:10px; border-bottom-right-radius:10px; border-bottom-left-radius:10px;}
+#globalhelp .content .text								{ font-size:15px; line-height:20px; padding:20px; width:auto; border-width:1px; border-style:solid; border-top:0px; margin:0 auto;}
+#globalhelp .buttonhelp									{ background:url('../../dressprow/images/16x16/info.png') no-repeat 6px 3px; cursor:pointer; float:right; margin-top:-1px; width:auto; text-align:center; padding:2px 8px 2px 25px; text-transform:uppercase; -webkit-border-bottom-right-radius:5px; -webkit-border-bottom-left-radius:5px; -moz-border-radius-bottomright:5px; -moz-border-radius-bottomleft:5px; border-bottom-right-radius:5px; border-bottom-left-radius:5px;}
 #globalhelp .close										{ visibility:hidden;}
 #globalhelp .content .text *							{ font-size:15px; line-height:20px;}
 
@@ -341,18 +341,21 @@ tr.view-log td.listingname a							{ background-image:url('../../dressprow/image
 
 
 /* login page */
-#login-form *											{ border:none; font-size:100%}
-form#login-form											{ background:url('../../dressprow/images/login.png') 5% 30% no-repeat; margin:0 auto; margin-top:40px; margin-bottom:20px; padding-top:20px; padding-left:130px; border-width:1px; border-style:solid; max-width:250px;}
-form#login-form table tr td								{ padding-right:10px !important; text-align:left;}
-#login-form .submit										{ margin-top:5px;}
+#login-form { padding-top: 100px; background: url("../images/logo-login.png") 50% 5px no-repeat;}
+form#login-form,
+form#forgotpassword-form                                { margin:0 auto; max-width:250px; background-color: transparent!important;}
+form#login-form table tr td								{ text-align:left;}
+#login-form .submit {background-color: #22769D;color:white;border:0; text-transform: capitalize;}
+#login-form .submit:hover {background-color: #49ABD9;color:white;}
+#login-form .submit,
+#forgotpassword-form .submit							{ width:100%;}
 .home-not-auth form hr									{ display:none; clear:both; margin:0 auto; width:100% !important; margin-bottom:40px; margin-top:40px;}
-form#forgotpassword-form								{ border-width:1px; border-style:solid; padding:20px 20px 10px 20px; margin-top:50px;}
-form#forgotpassword-form div.login						{ padding-left:50px; background:url('../../dressprow/images/32x32/consulting.png') 0% 10% no-repeat; padding-bottom:10px;}
 form#forgotpassword-form p								{ margin:0px; padding:0px;}
-form#forgotpassword-form input[type="text"]				{ float:left; max-width:70% !important; margin:5px 5px 10px 0px; height:20px; padding:2px;}
-form#forgotpassword-form input[type="submit"]			{ float:left; margin:4px; height:27px; padding:6px 10px;}
-.loginPassUpdate input[type="text"], 
-.loginPassUpdate input[type="password"] 				{ width:200px;}
+body.login #right-bar, body.login #header,
+body.login #navigation, body.login .pagetitle            { display:none;}
+body.login #content { width:100%; margin:0;}
+body.login { background-image: none;}
+body.login #globalhelp, body.login #container { margin-top:0;}
 
 /* pages: import1, import2, importadmin, admindetails, bouncerules, adminattributes,spageedit */
 table.import1, table.importadmin, table.importcsvMain, 
